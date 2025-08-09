@@ -1,0 +1,39 @@
+{
+  "knife-skills": {
+    "id": "knife-skills",
+    "title": "Knife Skills: Dice, Slice, Mince",
+    "difficulty": "Beginner",
+    "timeMinutes": 10,
+    "tags": [
+      "Basics",
+      "Safety",
+      "Prep"
+    ],
+    "xp": 20,
+    "thumbnail": ""
+  },
+  "eggs-101": {
+    "id": "eggs-101",
+    "title": "Eggs 101: Scramble to Soft-Boil",
+    "difficulty": "Beginner",
+    "timeMinutes": 12,
+    "tags": [
+      "Protein",
+      "Breakfast"
+    ],
+    "xp": 25,
+    "thumbnail": ""
+  },
+  "pasta-al-dente": {
+    "id": "pasta-al-dente",
+    "title": "Pasta: Perfect Al Dente",
+    "difficulty": "Intermediate",
+    "timeMinutes": 15,
+    "tags": [
+      "Italian",
+      "Timing"
+    ],
+    "xp": 30,
+    "thumbnail": ""
+  }
+}

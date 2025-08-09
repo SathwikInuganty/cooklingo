@@ -1,0 +1,237 @@
+{
+  "knife-skills": {
+    "lesson": {
+      "id": "knife-skills",
+      "title": "Knife Skills: Dice, Slice, Mince",
+      "xp": 20,
+      "cards": [
+        {
+          "prompt": "Which grip gives you most control of the chef\u2019s knife? (pinch or handle)",
+          "answer": "pinch"
+        },
+        {
+          "prompt": "True/False: Keep your guiding hand in a claw shape.",
+          "answer": "true"
+        },
+        {
+          "prompt": "What cut makes tiny pieces of garlic? (mince/slice/dice)",
+          "answer": "mince"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "knife-skills",
+      "title": "Knife Skills Check",
+      "xp": 30,
+      "questions": [
+        {
+          "q": "Safest cutting board surface?",
+          "options": [
+            "Slippery metal",
+            "Stable wood/plastic",
+            "Glass"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Best way to move chopped veggies?",
+          "options": [
+            "Knife blade",
+            "Bench scraper",
+            "Hands"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Which cut is larger?",
+          "options": [
+            "Dice",
+            "Mince",
+            "Brunoise"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "recipe": {
+      "id": "knife-skills",
+      "title": "Practice: Vegetable Stir-Fry",
+      "ingredients": [
+        "2 carrots",
+        "1 onion",
+        "1 bell pepper",
+        "2 cloves garlic",
+        "2 tbsp oil",
+        "2 tbsp soy sauce"
+      ],
+      "steps": [
+        {
+          "text": "Wash and prep all veg. Set up your station.",
+          "minutes": 2
+        },
+        {
+          "text": "Slice onion and pepper; dice carrots evenly.",
+          "minutes": 4
+        },
+        {
+          "text": "Mince garlic. Heat pan with oil until shimmering.",
+          "minutes": 2
+        },
+        {
+          "text": "Stir-fry veg 3\u20135 min; finish with soy sauce.",
+          "minutes": 4
+        }
+      ]
+    }
+  },
+  "eggs-101": {
+    "lesson": {
+      "id": "eggs-101",
+      "title": "Eggs 101: Scramble to Soft-Boil",
+      "xp": 25,
+      "cards": [
+        {
+          "prompt": "Ideal scramble heat? (low/medium/high)",
+          "answer": "low"
+        },
+        {
+          "prompt": "Soft-boil time (in minutes)?",
+          "answer": "6"
+        },
+        {
+          "prompt": "Season eggs: before or after cooking?",
+          "answer": "before"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "eggs-101",
+      "title": "Egg Mastery",
+      "xp": 25,
+      "questions": [
+        {
+          "q": "Add what for creamier scramble?",
+          "options": [
+            "Water",
+            "Cream/milk",
+            "Soda"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Shock boiled eggs in:",
+          "options": [
+            "Hot water",
+            "Ice bath",
+            "Room temp water"
+          ],
+          "answer": 1
+        }
+      ]
+    },
+    "recipe": {
+      "id": "eggs-101",
+      "title": "Soft-Boiled Eggs & Soldiers",
+      "ingredients": [
+        "2 eggs",
+        "Bread slices",
+        "Butter",
+        "Salt"
+      ],
+      "steps": [
+        {
+          "text": "Bring pot to a gentle boil.",
+          "minutes": 2
+        },
+        {
+          "text": "Lower in eggs; boil 6 minutes.",
+          "minutes": 6
+        },
+        {
+          "text": "Transfer to ice bath 1 minute.",
+          "minutes": 1
+        },
+        {
+          "text": "Toast and butter bread; serve with peeled eggs.",
+          "minutes": 3
+        }
+      ]
+    }
+  },
+  "pasta-al-dente": {
+    "lesson": {
+      "id": "pasta-al-dente",
+      "title": "Pasta: Perfect Al Dente",
+      "xp": 30,
+      "cards": [
+        {
+          "prompt": "Salt pasta water: yes/no?",
+          "answer": "yes"
+        },
+        {
+          "prompt": "'Al dente' means? (to the tooth/very soft)",
+          "answer": "to the tooth"
+        },
+        {
+          "prompt": "Reserve pasta water: yes/no?",
+          "answer": "yes"
+        }
+      ]
+    },
+    "quiz": {
+      "id": "pasta-al-dente",
+      "title": "Pasta Timing",
+      "xp": 30,
+      "questions": [
+        {
+          "q": "Ratio of water to pasta?",
+          "options": [
+            "1:1",
+            "4:1+",
+            "No water"
+          ],
+          "answer": 1
+        },
+        {
+          "q": "Finish pasta in sauce?",
+          "options": [
+            "Yes",
+            "No",
+            "Sometimes"
+          ],
+          "answer": 0
+        }
+      ]
+    },
+    "recipe": {
+      "id": "pasta-al-dente",
+      "title": "Spaghetti Aglio e Olio",
+      "ingredients": [
+        "200g spaghetti",
+        "3 cloves garlic",
+        "Olive oil",
+        "Chili flakes",
+        "Parsley",
+        "Salt"
+      ],
+      "steps": [
+        {
+          "text": "Boil salted water; add spaghetti.",
+          "minutes": 10
+        },
+        {
+          "text": "Gently cook sliced garlic in oil until fragrant.",
+          "minutes": 3
+        },
+        {
+          "text": "Add chili, pasta, splash of water; toss to coat.",
+          "minutes": 2
+        },
+        {
+          "text": "Finish with parsley.",
+          "minutes": 1
+        }
+      ]
+    }
+  }
+}
