@@ -102,5 +102,5 @@ app.post('/api/progress/quiz', async (req,res)=>{
   res.json({ ok:true, xp:u.xp })
 })
 
-const port = 4000
+const port = process.env.PORT || 4000
 app.listen(port, ()=> console.log('CookLingo API running on http://localhost:'+port))
