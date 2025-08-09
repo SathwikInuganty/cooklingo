@@ -1,3 +1,4 @@
+import { api } from '../lib/api'
 
 import { useEffect, useState } from 'react'
 
@@ -12,7 +13,7 @@ type Progress = {
 export default function Progress(){
   const [p, setP] = useState<Progress | null>(null)
   useEffect(()=>{
-    fetch('/api/progress').then(r=>r.json()).then(setP)
+    fetch(api('/progress')).then(r=>r.json()).then(setP)
   },[])
 
   if (!p) return <div>Loading...</div>
