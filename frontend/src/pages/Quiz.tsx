@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 
@@ -18,15 +17,29 @@ export default function Quiz() {
   },[id])
 
   if (!data) return <div>Loading...</div>
-  const q = data.questions[idx]
+  const q = data!.questions[idx] // non-null because of early return
 
   function submit(){
+    if (!data) return // nested guard for TS
     if (selected === null) return
-    if (selected === q.answer) setScore(s => s+1)
-    if (idx + 1 < data.questions.length) {
-      setIdx(i=>i+1); setSelected(null)
+    const gotItRight = selected === q.answer
+    if (gotItRight) setScore(s => s + 1)
+
+    if (idx + 1 < data!.questions.length) {
+      setIdx(i => i + 1)
+      setSelected(null)
     } else {
-      fetch('/api/progress/quiz', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ lessonId:id, correct: score+ (selected===q.answer?1:0), total: data.questions.length, xp: data.xp })})
+      const finalScore = score + (gotItRight ? 1 : 0)
+      fetch('/api/progress/quiz', {
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({
+          lessonId: id,
+          correct: finalScore,
+          total: data!.questions.length,
+          xp: data!.xp
+        })
+      })
       nav('/progress')
     }
   }
@@ -35,12 +48,18 @@ export default function Quiz() {
     <div className="max-w-2xl mx-auto card">
       <div className="flex items-center justify-between">
         <h2 className="font-bold text-xl">{data.title} — Quiz</h2>
-        <div className="tag">{idx+1}/{data.questions.length}</div>
+        <div className="tag">{idx+1}/{data!.questions.length}</div>
       </div>
       <p className="mt-2 text-lg">{q.q}</p>
       <div className="mt-4 grid gap-2">
         {q.options.map((opt,i)=>(
-          <button key={i} onClick={()=>setSelected(i)} className={"btn " + (selected===i ? "bg-stone-200":"bg-stone-100 hover:bg-stone-200")}>{opt}</button>
+          <button
+            key={i}
+            onClick={()=>setSelected(i)}
+            className={"btn " + (selected===i ? "bg-stone-200":"bg-stone-100 hover:bg-stone-200")}
+          >
+            {opt}
+          </button>
         ))}
       </div>
       <div className="mt-4 flex justify-end">
