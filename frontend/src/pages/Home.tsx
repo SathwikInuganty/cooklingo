@@ -1,5 +1,4 @@
 import { api } from '../lib/api'
-import { api } from '../lib/api'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
